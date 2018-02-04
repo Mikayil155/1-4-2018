@@ -1,0 +1,32 @@
+var x = Number(prompt("X oxu uzre reqemi daxil edin : "));
+var y = Number(prompt("Y oxu uzre reqemi daxil edin : "));
+function rub(x,y){
+	if (x == undefined || isNaN(parseFloat(x)) || y == undefined || isNaN(parseFloat(y))) {
+         return false;
+     }var result;
+   
+     if(x>0 && y>0){
+     	result = console.log("1-ci Rub");
+     	return result;
+     }
+     else if (x<0 && y>0){
+     	result = console.log("2-ci Rub");
+     	return result;
+     }
+     else if (x<0 && y<0){
+     	result = console.log("3-ci Rub");
+     	return result;
+     }
+     if(x>0 && y<0){
+  		result = console.log("4-ci Rub");
+  		return result;
+     }
+     else {
+     	result = console.log("rube dusmur");
+     	return result;
+     }
+
+
+
+} result = rub(x,y);
+  console.log(result);	
